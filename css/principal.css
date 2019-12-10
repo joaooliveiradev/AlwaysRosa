@@ -1,0 +1,123 @@
+/* FONTS MATERIAL ICONS*/
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+  }
+
+@font-face{
+    font-family: myFont;
+    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+body{
+    background-color: #af0404!important;
+}
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+  } 
+
+nav{
+    background-color: #252525!important;
+    height: 95px!important;
+}
+nav .brand-logo{
+    top: -26%!important;
+}
+
+.brand-logo img{
+    width: 152px;
+    height: 131px;
+    /* top: 30px; */
+    float: left;
+    position: absolute;
+    left: -75px;
+    top: 7px;
+}
+main{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+main .background{
+    width: 98%;
+    height: 200px;
+    float: left;
+    background: red;
+    margin: 1%;
+    margin-bottom: 0;
+    border-radius: 6px;
+}
+main .background img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+main .pedido{
+    width: 98%;
+    height: 150px;
+    margin: 1% 0% 0% 1%;
+    border-radius: 6px;
+    float: left;
+    background: blue;
+    display: inline-block;
+}
+main .pedido img{
+    width: 120px;
+    position: relative;
+    padding-top: 10px;
+    left: 21%;
+    transform: translateX(-23%);
+}
+.titulopedido{
+    float: right;
+    font: 30pt Arial;
+    margin-right: 22%;
+    margin-top: 6%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+main .feedback{
+    width: 48%;
+    float: left;
+    background: green;
+    height: 200px;
+    border-radius: 6px;
+    margin: 1%;
+    margin-bottom: 0;
+
+
+}
+main .parceiros{
+    width: 48%;
+    float: left;
+    margin: 1% 1% 0% 0%;
+    background: yellow;
+    height: 200px;
+    border-radius: 6px;
+    margin: 1%;
+    margin-bottom: 0;
+}
+main .avisos{
+    width: 98%;
+    height: 150px;
+    margin: 1% 0% 0% 1%;
+    border-radius: 6px;
+    float: left;
+    background: red;
+    display: inline-block;
+}

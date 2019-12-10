@@ -1,0 +1,104 @@
+
+body{
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #af0404!important;
+    
+}
+.brand-logo img {
+    width: 152px;
+    height: 131px;
+    /* top: 30px; */
+    float: left;
+    position: absolute;
+    left: -75px;
+    top: -16px;
+}
+
+nav{
+    background-color: #252525!important;
+    height: 95px!important;
+}
+
+
+.login{
+    background-color: #FFFFFF;
+    height: 350px;
+    margin-top: 60px;
+    border-radius: 6px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px
+}
+
+.login .logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #252525;
+    position: relative;
+    z-index: 2;
+   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;    
+}
+
+.login .logo img{
+    width: 54px;
+    /* left: 30px; */
+    padding-left: -8px;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    float: left;
+}
+.subtitulo{
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: -33px;
+}
+.inputlogin{
+    border: 1px solid grey!important;
+    width: calc(100% - 10.875px * 2)!important;
+    border-radius: 5px!important;
+    margin-top: 30px!important;
+    margin-left: 0px !important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+
+    
+}
+
+.inputsenha{
+    border: 1px solid grey!important;
+    width: calc(100% - 10.875px * 2)!important;
+    border-radius: 5px!important;
+    margin-left: 0px !important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  
+    
+}
+
+.button-center {
+    margin-top: 35px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.botaoLogin{
+    margin-right: 15px;
+    background-color: #252525!important;
+    font-weight: 600;
+
+}
+.botaoCadastro{
+    background-color: #252525!important;
+    font-weight: 600;
+}

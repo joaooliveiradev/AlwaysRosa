@@ -1,0 +1,190 @@
+body{
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #af0404!important;
+
+    
+}
+.brand-logo img {
+    width: 152px;
+    height: 131px;
+    /* top: 30px; */
+    /* float: left; */
+    /* margin-bottom: 30px; */
+    /* display: block; */
+    position: relative;
+    top: -17px;
+
+}
+
+
+nav{
+    background-color: #252525!important;
+    height: 95px!important;
+}
+
+.painel{
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 50px 50px 50px;
+ 
+}
+.box{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon{
+    font-size: 40px!important;
+    display: block!important;
+}
+.box2{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo2{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon2{
+    font-size: 40px!important;
+    display: block!important;
+}
+
+.box3{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo3{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon3{
+    font-size: 40px!important;
+    display: block!important;
+}
+
+.box4{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo4{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon4{
+    font-size: 40px!important;
+    display: block!important;
+}
+.box5{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo5{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon5{
+    font-size: 40px!important;
+    display: block!important;
+}
+
+.box6{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo6{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon6{
+    font-size: 40px!important;
+    display: block!important;
+}
+
+.box7{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo7{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon7{
+    font-size: 40px!important;
+    display: block!important;
+}
+
+.box8{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo8{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon8{
+    font-size: 40px!important;
+    display: block!important;
+}
+.box9{
+    margin-top: 22px;
+    height: auto;  
+    text-align: center;
+}
+.boxtitulo9{
+    display: block;
+    text-align: center;
+    font: 700 12pt Arial;
+}
+.boxicon9{
+    font-size: 40px!important;
+    display: block!important;
+}
+
+.titulo{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font: bold 23pt Arial;
+}
+
+a{
+    text-decoration: none!important;
+    color: rgba(0,0,0,0.87);
+}
+/*MEDIA QUERIES*/
+
+/*425px*/
+@media only screen and (min-width: 425px) {
+    .painel {
+      height: 300px;
+    }
+  }
+
+/*768px*/
+@media only screen and (min-width: 768px) {
+    .painel {
+      height: 270px;
+    }
+  }

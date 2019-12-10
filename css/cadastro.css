@@ -1,0 +1,138 @@
+
+body{
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #af0404!important;
+    
+}
+.brand-logo img {
+    width: 152px;
+    height: 131px;
+    float: left;
+    position: relative;
+    top: -17px;
+}
+
+nav{
+    background-color: #252525!important;
+    height: 95px!important;
+}
+
+
+.cadastro{
+    background-color: #FFFFFF;
+    height: auto!important;
+    margin-top: 60px;
+    border-radius: 6px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px
+}
+
+.cadastro .logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #252525;
+    position: relative;
+    z-index: 2;
+   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;    
+}
+
+.cadastro .logo img{
+    width: 54px;
+    /* left: 30px; */
+    padding-left: -8px;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    float: left;
+}
+.subtitulo{
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: -33px;
+}
+.inputlogin{
+    border: 1px solid grey!important;
+    width: calc(100% - 10.875px * 2)!important;
+    border-radius: 5px!important;
+    margin-top: 30px!important;
+    margin-left: 0px !important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+
+    
+}
+
+.inputsenha{
+    border: 1px solid grey!important;
+    width: calc(100% - 10.875px * 2)!important;
+    border-radius: 5px!important;
+    margin-left: 0px !important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  
+    
+}
+
+.button-center {
+    margin-top: 25px;
+    text-align: center;
+    white-space: nowrap!important;
+    margin-bottom: 35px;
+}
+
+.botaoCadastro{
+    margin-right: 15px;
+    background-color: #252525!important;
+    font-weight: 600;
+
+}
+select{
+    display: block!important;
+    margin-top: 10px!important;
+    font: normal 16pt Arial;
+}
+.subtitulo2{
+    font-size: 21px;
+    font-weight: 500;
+    display: block!important;
+    text-align: center;
+}
+.botaoVoltar{
+    margin-right: 15px;
+    background-color: #252525!important;
+
+}
+
+.botaoVoltar a{
+    text-decoration: none;
+    margin-right: 15px;
+    background-color: #252525!important;
+}
+table, th,td{
+    font-size: 15px!important;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .cadastro{
+        height: auto!important;
+        padding: 0!important;
+
+    }
+    th,td{
+        padding: 15px 4px!important;
+        font-size: 14px!important;
+    }
+  }

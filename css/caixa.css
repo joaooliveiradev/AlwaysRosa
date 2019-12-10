@@ -1,0 +1,71 @@
+body{
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #af0404!important;
+}
+.brand-logo img {
+    width: 152px;
+    height: 131px;
+    position: relative;
+    top: -17px;
+
+}
+
+nav{
+    background-color: #252525!important;
+    height: 95px!important;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.painel{
+    background-color: #FFFFFF;
+    border-color: white;
+    border-radius: 12px;
+    padding: 0!important;
+    height: auto!important;
+}
+.titulocomanda{
+    display: block;
+    padding-left: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.titulocliente{
+    display: block;
+    padding-left: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.inputcomanda{
+    border: 1px solid grey!important;
+    border-radius: 5px!important;;
+    margin-top: 0px!important;
+    font-weight: 600;
+    width: 100%!important;
+    text-align: center;
+}
+.button-center{
+    text-align: center;
+}
+.botaoVoltar{
+    background-color: #af0404!important;
+    margin-bottom: 20px;
+}
+.button{
+    background-color: #af0404!important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

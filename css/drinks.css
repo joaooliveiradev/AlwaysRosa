@@ -1,0 +1,131 @@
+body{
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #af0404!important;
+    
+  
+    
+  }
+  .brand-logo img {
+    width: 152px;
+    height: 131px;
+    /* top: 30px; */
+    /* float: left; */
+    /* margin-bottom: 30px; */
+    /* display: block; */
+    position: relative;
+    top: -17px;
+  
+  }
+  
+  nav{
+    background-color: #252525!important;
+    height: 95px!important;
+  }
+  
+  .titulo{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 20px 0px;
+  }
+  .painel{
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .titulopainel{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .tituloquantidade{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .input-field{
+    padding-left: 0!important;
+    display: block;
+    margin-bottom: 1px!important;
+  }
+  .inputquantidade{
+    border: 1px solid grey!important;
+    border-radius: 5px!important;
+    padding-left: 10px!important;
+    font-size: 24px!important;
+    text-align: center;
+    display: block;
+}
+.titulopreco{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 0px!important;
+    text-align: center;
+    display: inline-block!important;
+    width: 100%;
+}
+.inputpreco{
+  border: 1px solid grey!important;
+  border-radius: 5px!important;
+  padding-left: 10px!important;
+  font-size: 24px!important;
+  text-align: center;
+  display: block;
+}
+.offset-s4{
+  margin-bottom: 3px!important;
+}
+.titulodescricao{
+  font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 0px!important;
+    text-align: center;
+    display: inline-block!important;
+    width: 100%;
+}
+
+.inputdescricao{
+  width: 100%!important;
+  /* margin-left: 11px!important; */
+  padding-right: 0px!important;
+  height: 30px!important;
+    
+}
+#textarea1{
+  font-size: 18px!important;
+  padding-left: 10px!important;
+  font-weight: 600!important;
+  border: 1px solid grey!important;
+  border-radius: 5px!important;
+  padding-left: 10px!important;
+  font-size: 20px!important;
+  display: block;
+}
+.button-center{
+  text-align: center;
+}
+.button{
+  margin-top: 15px;
+  background-color: #af0404!important;
+}
+.botaoVoltar{
+  margin-left: 20px;
+  margin-top: 15px;
+  background-color: #af0404!important;
+}
+@media only screen and (max-width: 375px) {
+  th,td{
+      padding: 15px 3px!important;
+      font-size: 14px!important;
+  }
+}

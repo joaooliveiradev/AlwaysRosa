@@ -1,0 +1,90 @@
+body{
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #af0404!important;
+
+  }
+  .brand-logo img {
+    width: 152px;
+    height: 131px;
+    /* top: 30px; */
+    /* float: left; */
+    /* margin-bottom: 30px; */
+    /* display: block; */
+    position: relative;
+    top: -17px;
+  
+  }
+  
+  nav{
+    background-color: #252525!important;
+    height: 95px!important;
+  }
+  
+  .titulo{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 20px 0px;
+  }
+  .painel{
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .titulopainel{
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+  }
+  .titulo2{
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding-top: 10px;
+
+  }
+.inputpedido{
+  border: 1px solid grey!important;
+  margin-left: 0px !important;
+  border-radius: 5px!important;
+  padding-left: 10px!important;
+  width: calc(100% - 10.875px * 2)!important;
+}
+.input-field{
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.button-center{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.button{
+  margin-top: 30px;
+  background-color: #252525!important;
+  margin-bottom: 30px;
+
+}
+
+  .botaoMais{
+    background-color: #252525!important;
+    margin-bottom: 30px;
+    
+  }
+  .botaoEnviar{
+    background-color: #252525!important;
+    margin-bottom: 30px;
+  }
+/*768px*/
+@media only screen and (min-width: 497px) {
+    .botaoMais {
+      margin-right: 30px;
+    }
+  }
+  
