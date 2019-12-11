@@ -6,9 +6,6 @@
     <!--Import MATERIALIZE.CSS-->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
 
-    <!--Import MATERIALIZE.JS-->
-    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AlwaysRosa - Garçom</title>
@@ -47,7 +44,7 @@
 
                 <div class="col s4 box2">
                     <i class="material-icons boxicon2">add_shopping_cart</i>
-                    <span class="boxtitulo2"><a href="pedidosandamento.php">Pedidos Finalizados</a></span>
+                    <span class="boxtitulo2"><a href="pedidosfinalizados.php">Pedidos Finalizados</a></span>
                 </div>
             </div>
         </div>

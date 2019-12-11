@@ -4,7 +4,7 @@ $idpedido = $_SESSION["pedido"]["id"];
 $clientemesa = $_SESSION["clientemesa"];
 $couver = $_SESSION["couver"];
 $servico = $_SESSION["servico"];
-include '../php/conexao.php';
+include '../../php/conexao.php';
 try {
     $stmt = $conexao->prepare("SELECT SUM(preco) FROM itens WHERE id_pedido = :idpedido");
     $stmt->bindValue(':idpedido', $idpedido);
@@ -22,22 +22,22 @@ try {
 <head>
 
     <!--Import MATERIALIZE.CSS-->
-    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css" media="screen,projection" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AlwaysRosa - Fechamento Pedido</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/fechamentopedido.css">
-    <link rel="shortcut icon" href="../img/favicon.ico" />
-    <link href="../css/icon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/fechamentopedido.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <link href="../../css/icon.css" rel="stylesheet">
 </head>
 
 <body>
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
+            <a href="#" class="brand-logo center"><img src="../../img/logo.png" /></a>
         </div>
     </nav>
 
@@ -48,10 +48,6 @@ try {
 
             <div class="col s12 painel">
                 <div class="row" style="padding: 0 10px; margin-bottom: 0px">
-
-
-
-
                     <div class="col s6 m3 l3 ">
                         <span class="titulocomanda">Comanda: </span>
                     </div>
@@ -120,7 +116,7 @@ try {
 
                     <div class=" col s6 m6 l6" id="box1">
                         <select id="selectForma1" name="selectForma1" class="browser-default">
-                            <?php include('../php/formaPagamento/select_formapagamento.php') ?>
+                            <?php include('../../php/formaPagamento/select_formapagamento.php') ?>
                         </select>
                     </div>
 
@@ -146,7 +142,7 @@ try {
 
                     <div class=" col s5 m6 l6" id="select2">
                         <select id="selectForma2" name="selectForma2" class="browser-default">
-                            <?php include('../php/formaPagamento/select_formapagamento.php') ?>
+                            <?php include('../../php/formaPagamento/select_formapagamento.php') ?>
                         </select>
                     </div>
 
@@ -173,7 +169,7 @@ try {
 
                     <div class=" col s5 m6 l6" id="select3">
                         <select id="selectForma3" name="selectForma3" class="browser-default">
-                            <?php include('../php/formaPagamento/select_formapagamento.php') ?>
+                            <?php include('../../php/formaPagamento/select_formapagamento.php') ?>
                         </select>
                     </div>
 
@@ -244,16 +240,16 @@ try {
 
 
 
-        <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../../jquery/jquery-3.3.1.min.js"></script>
 
 
-        <script type="text/javascript" src="../js/fechamentopedido.js"></script>
+        <script type="text/javascript" src="../../js/fechamentopedido.js"></script>
 
         <!--Import JQUERY-->
-        <script type="text/javascript" src="../materialize/jquery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../../materialize/jquery/jquery-3.3.1.min.js"></script>
 
         <!--Import MATERIALIZE.JS-->
-        <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../../materialize/js/materialize.min.js"></script>
 
 
 

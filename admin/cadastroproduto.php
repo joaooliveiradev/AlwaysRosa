@@ -5,10 +5,6 @@
 
     <!--Import MATERIALIZE.CSS-->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-
-    <!--Import MATERIALIZE.JS-->
-    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AlwaysRosa - Garçom</title>
@@ -51,7 +47,7 @@
 
                     <div class="button-center">
                         <button class="btn waves-effect waves-light button" type="submit" name="action">Cadastrar</button>
-                        <a href="admin.php" class="waves-effect waves-light btn botaoVoltar">
+                        <a href="index.php" class="waves-effect waves-light btn botaoVoltar">
                             Voltar
                         </a>
                     </div>

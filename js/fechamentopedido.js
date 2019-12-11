@@ -79,7 +79,7 @@ $("#fechar").click(function() {
           inputValue3: inputValue3
         },
         success: function(result){
-            window.location.href="../caixa/caixa.php"
+            window.location.href="../caixa/index.php"
         },
       });
 

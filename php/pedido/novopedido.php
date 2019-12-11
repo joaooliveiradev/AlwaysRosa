@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../conexao.php';
+include '../conexao.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $idmesa = $_POST["mesa"];
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt2->bindValue(':idmesa', $idmesa);
         $stmt2->bindValue(':status', 1);
         $stmt2->execute();
-        header('location: ../../../garcom/produtos.php');
+        header('location: ../../garcom/produtos.php');
     } else {
         session_unset();
     }

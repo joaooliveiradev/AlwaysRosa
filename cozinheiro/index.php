@@ -5,10 +5,6 @@
 
     <!--Import MATERIALIZE.CSS-->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-
-    <!--Import MATERIALIZE.JS-->
-    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Always - Cozinha</title>

@@ -75,7 +75,7 @@
                 if ($cargo == "1") {
                     header("location: caixa/caixa.php");
                 } else if ($cargo == "2") {
-                    header("location: garcom/garcom.php");
+                    header("location: garcom/index.php");
                 } else if ($cargo == "3") {
                     header("location: admin/admin.php");
                 } else if ($cargo == "4") {

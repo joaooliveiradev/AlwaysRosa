@@ -4,24 +4,23 @@
 <head>
 
     <!--Import MATERIALIZE.CSS-->
-    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css" media="screen,projection" />
 
-   
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AlwaysRosa - Selecionar Produtos</title>
+    <title>AlwaysRosa - Produto Administrador</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/produto.css">
-    <link rel="shortcut icon" href="../img/favicon.ico" />
-    <link href="../css/icon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/produto.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <link href="../../css/icon.css" rel="stylesheet">
 </head>
 
 <body>
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
+            <a href="#" class="brand-logo center"><img src="../../img/logo.png" /></a>
         </div>
     </nav>
 
@@ -35,12 +34,12 @@
                 <h1 class="titulopainel">Anotando o Pedido!</h1>
 
 
-                <form id="boxform" method="POST" action="../php/produtos/insert_produto.php">
+                <form id="boxform" method="POST" action="../../php/produtos/admin/insert_produto.php">
                     <div id="box" class="col s12 box">
                         <?php
                         session_start();
                         error_reporting(0);
-                        include '../php/conexao.php';
+                        include '../../php/conexao.php';
                         $idpedido = $_SESSION["pedido"]["id"]
                         ?>
                         <h1 class="titulocomanda">Comanda: <?= $idpedido ?></h1>
@@ -49,7 +48,7 @@
                         <?php
 
                         error_reporting(0);
-                        include '../php/conexao.php';
+                        include '../../php/conexao.php';
                         $id = $_GET['id'];
                         $stmt = $conexao->prepare("SELECT * FROM itens WHERE iditens=:id");
                         $stmt->bindValue(':id', $id);
@@ -60,7 +59,7 @@
                         ?>
                         <input value="<?= $id ?>" name="id" type="text" class="validate inputlogin" style="display: none!important" readonly>
                         <select name="selectCategoria">
-                            <?php include_once('../php/produtos/select_categoria.php') ?>
+                            <?php include_once('../../php/produtos/admin/select_categoria.php') ?>
                         </select>
                         <div class="button-center">
                             <a id="boxbutton" class="btn waves-effect waves-light button">Selecionar</a>
@@ -109,19 +108,48 @@
 
 
 
-    <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../js/produto.js"></script>
+    <script type="text/javascript" src="../../jquery/jquery-3.3.1.min.js"></script>
+
+    <!--C-->
+
+    <script>
+            $(document).ready(function () {
+                $("#box2").hide();
+                $("#boxbutton").click(function () {
+                    $("#box").hide();
+                    $("#box2").show();
+                    let selectValue = $('select[name=selectCategoria]').val();
+                    $.ajax({
+                    type: "POST",
+                    url: '../../php/produtos/select_produto.php',
+                    data: {
+                        idcategoria: selectValue,
+
+                    },
+                    success: function (data) {
+                        $('#selectProduto').html(data);
+                    },
+                    });
+                });
+                $("#voltar").click(function () {
+                    $("#box2").hide();
+                    $("#box").show();
+                });
+        });
+
+    </script>
+
     <!--Import JQUERY-->
-    <script type="text/javascript" src="../materialize/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../materialize/jquery/jquery-3.3.1.min.js"></script>
 
     <!--Import MATERIALIZE.JS-->
-    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../materialize/js/materialize.min.js"></script>
 
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             setInterval(async function() {
-                const data = await (await fetch('../php/garcom/verifica_pedidos.php')).json();
+                const data = await (await fetch('../../php/garcom/verifica_pedidos.php')).json();
 
                 for (const pedido in data) {
                     M.toast({

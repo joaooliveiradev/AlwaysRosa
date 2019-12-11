@@ -8,7 +8,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AlwaysRosa - Pedidos em andamento</title>
+    <title>AlwaysRosa - Pedidos Finalizados</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/pedidos.css">
