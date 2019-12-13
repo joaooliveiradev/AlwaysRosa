@@ -1,5 +1,5 @@
 <?php
-include '../php/conexao.php';
+include '../../php/conexao.php';
 
 try {
     $stmt = $conexao->prepare("SELECT idprodutos,descricao,preco,categoria.nome from categoria inner join produtos on categoria.idcategoria = produtos.categoria_idcategoria where status_produto = 0");

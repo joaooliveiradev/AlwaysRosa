@@ -1,5 +1,5 @@
 <?php
-include '../conexao.php';
+include '../../conexao.php';
 $selectValue = $_POST['idcategoria'];
 try {
     $stmt = $conexao->prepare("SELECT idprodutos,descricao,preco FROM produtos where categoria_idcategoria = :id and status_produto = 0");

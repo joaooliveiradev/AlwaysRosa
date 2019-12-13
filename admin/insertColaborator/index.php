@@ -2,26 +2,21 @@
 <html>
 
 <head>
-
-
-    <!--Import MATERIALIZE.CSS-->
-    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-
- 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Always - Cadastro </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../img/favicon.ico" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/cadastro.css">
-    <link href="../css/icon.css" rel="stylesheet">
+    <link href="../../css/icon.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/cadastro.css">
 </head>
 
 <body>
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
+            <a href="#" class="brand-logo center"><img src="../../img/logo.png" /></a>
         </div>
     </nav>
 
@@ -33,9 +28,9 @@
         <div class="row">
             <div class="col s12 cadastro">
 
-                <form name="formulario" action="../php/funcionario/insert_funcionario.php" method="POST">
+                <form name="formulario" action="../../php/funcionario/insert_funcionario.php" method="POST">
                     <div class="logo">
-                        <img src="../img/logousuario.png" />
+                        <img src="../../img/logousuario.png" />
                     </div>
                     <h1 class="subtitulo">Cadastro de Funcionário</h1>
 
@@ -44,7 +39,7 @@
                     <span class="subtitulo2">Selecione o cargo do funcionário: <span>
                             <select name="selectCategoria">
                                 <?php
-                                include '../php/conexao.php';
+                                include '../../php/conexao.php';
                                 try {
                                     $stt = $conexao->prepare("SELECT * FROM cargo");
                                     if ($stt->execute()) {
@@ -66,7 +61,7 @@
 
                             <div class="button-center">
                                 <button class="waves-effect waves-light btn botaoCadastro" type="submit">Cadastrar</button>
-                                <a href="index.php" class="waves-effect waves-light btn botaoVoltar">
+                                <a href="../" class="waves-effect waves-light btn botaoVoltar">
                                     Voltar
                                 </a>
                             </div>
@@ -83,7 +78,7 @@
                                 </thead>
 
                                 <tbody>
-                                    <?php include_once('../php/funcionario/select_funcionario.php'); ?>
+                                    <?php include_once('../../php/funcionario/select_funcionario.php'); ?>
                                 </tbody>
                             </table>
 

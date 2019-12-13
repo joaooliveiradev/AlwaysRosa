@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
 <?php
-include '../php/conexao.php';
+include '../../php/conexao.php';
 ?>
 
 <head>
-
-  <!--Import MATERIALIZE.CSS-->
-  <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AlwaysRosa - Resumo de Vendas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="../css/relatorio.css">
-  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <link rel="shortcut icon" href="../../img/favicon.ico" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="../../css/relatorio.css">
 </head>
 
 <body>
@@ -23,7 +20,7 @@ include '../php/conexao.php';
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
+      <a href="#" class="brand-logo center"><img src="../../img/logo.png" /></a>
     </div>
   </nav>
 
@@ -89,7 +86,7 @@ include '../php/conexao.php';
 
 
       <div class="button-center">
-        <a href="admin.php" class="waves-effect waves-light btn botaoVoltar">
+        <a href="../" class="waves-effect waves-light btn botaoVoltar">
           Voltar
         </a>
       </div>
@@ -103,19 +100,13 @@ include '../php/conexao.php';
   <!--FIM DO CONTAINER-->
 
 
-  <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../materialize/jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../materialize/js/materialize.min.js"></script>
 
-  <!--Import JQUERY-->
-  <script type="text/javascript" src="../materialize/jquery/jquery-3.3.1.min.js"></script>
-  <!--IMPORTANDO JS -->
-
-  <!--Import MATERIALIZE.JS-->
-  <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-
-  
-  <script src="../js/highcharts.js"></script>
-  <script src="../js/exporting.js"></script>
-  <script src="../js/export-data.js"></script>
+  <script src="../../js/highcharts.js"></script>
+  <script src="../../js/exporting.js"></script>
+  <script src="../../js/export-data.js"></script>
 
   <script>
   $(document).ready(function(){
