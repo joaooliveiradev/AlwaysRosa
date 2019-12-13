@@ -2,26 +2,21 @@
 <html>
 
 <head>
-
-    <!--Import MATERIALIZE.CSS-->
-    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-
-   
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Always - Mesa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/mesa.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/mesa.css">
     <link rel="shortcut icon" href="../img/favicon.ico" />
-    <link href="../css/icon.css" rel="stylesheet">
+    <link href="../../css/icon.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css" media="screen,projection" />
 </head>
 
 <body>
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
+            <a href="#" class="brand-logo center"><img src="../../img/logo.png" /></a>
         </div>
     </nav>
 
@@ -30,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="painel">
-                <form action="../php/mesa/insertmesa.php" method="POST">
+                <form action="../../php/mesa/insertmesa.php" method="POST">
                     <h1 class="titulo2">Digite o Nº da Mesa</h1>
 
                     <div class="input-field col s12">
@@ -40,7 +35,7 @@
                     <div class="col s12 botao">
                         <div class="button-center">
                             <button class="btn waves-effect waves-light button" type="submit">Cadastrar</button>
-                            <a href="index.php" class="waves-effect waves-light btn botaoVoltar">
+                            <a href="../" class="waves-effect waves-light btn botaoVoltar">
                                 Voltar
                             </a>
                         </div>
@@ -59,7 +54,7 @@
                     </thead>
 
                     <tbody>
-                        <?php include_once("../php/mesa/select_mesa.php") ?>
+                        <?php include_once("../../php/mesa/select_mesa.php") ?>
                     </tbody>
                 </table>
 

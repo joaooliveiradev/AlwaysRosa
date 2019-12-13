@@ -46,7 +46,7 @@
     </form>
 
     <div class="button-center">
-        <a href="../../index.php" class="waves-effect waves-light btn botaoVoltar">Voltar</a>
+        <a href="../" class="waves-effect waves-light btn botaoVoltar">Voltar</a>
     </div>
 
 

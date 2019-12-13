@@ -1,5 +1,5 @@
 <?php
-    include '../php/conexao.php';
+    include '../../php/conexao.php';
         try {
             $stmt = $conexao->prepare("SELECT * FROM mesa");
             if ($stmt->execute()) {

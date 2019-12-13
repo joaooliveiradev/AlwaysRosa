@@ -38,7 +38,7 @@
 
 
                 <div class="col s12 button-center">
-                    <a href="admin.php" class="waves-effect waves-light btn botaoVoltar">
+                    <a href="../" class="waves-effect waves-light btn botaoVoltar">
                         Voltar
                     </a>
                 </div>

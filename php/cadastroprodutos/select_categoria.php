@@ -1,6 +1,6 @@
     <?php
     // Bloco que realiza o papel do Read - recupera os dados e apresenta na tela
-    include '../php/conexao.php';
+    include '../../php/conexao.php';
     try {
         $stmt = $conexao->prepare("SELECT * FROM categoria");
         if ($stmt->execute()) {

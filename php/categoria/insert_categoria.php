@@ -6,7 +6,7 @@ include '../../php/conexao.php';
 $stmt = $conexao->prepare("INSERT INTO categoria (nome) VALUES (?)");
 $stmt->bindParam(1, $categoria);
 if ($stmt->execute()) {
-header('location: ../../admin/cadastrocategoria.php');
+header('location: ../../admin/insertCategory/');
 } else {
 throw new PDOException("Erro: Não foi possível executar a declaração sql");
 }
