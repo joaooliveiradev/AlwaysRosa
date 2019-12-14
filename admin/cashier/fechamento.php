@@ -27,11 +27,8 @@
 
     <div class="container">
         <div class="row">
-            <form id="myForm" method="post" action="../../php/caixa/controller.php">
+            <form id="myForm" method="post" action="../../php/caixa/admin/controller.php">
                 <div class="col s12 painel">
-
-
-
 
                     <div class="row" style="padding: 0 10px;">
 

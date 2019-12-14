@@ -46,11 +46,11 @@
                                     <div class="col s12 img">
                                         <h1 class="texto">Mesa <?= $rs->numero ?></h1>
                                         <?php if ($rs->status == 0) {          ?>
-                                            <img src="../../icons/icone2.png">
+                                            <img src="../../img/icone2.png">
                                         <?php
                                                     } else {
                                                         ?>
-                                            <img src="../../icons/icone3.png">
+                                            <img src="../../img/icone3.png">
 
                                         <?php
                                                     }

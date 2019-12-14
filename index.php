@@ -56,19 +56,18 @@
             $stmt->bindValue(":senha", $senha);
             $stmt->execute();
             if ($stmt->rowCount() > 0) {
+                session_start();
                 $user = $stmt->fetch();
                 $cargo = $user["id_cargo"];
-                $_SESSION['rosa']['login'] = $login;
-                $_SESSION['rosa']['senha'] = $senha;
-                $_SESSION['rosa']['cargo'] = $cargo;
+                $_SESSION['cargo'] = $cargo;
                 if ($cargo == "1") {
-                    header("location: caixa/caixa.php");
+                    header("location: caixa/index.php");
                 } else if ($cargo == "2") {
                     header("location: garcom/index.php");
                 } else if ($cargo == "3") {
-                    header("location: admin/");
+                    header("location: admin/index.php");
                 } else if ($cargo == "4") {
-                    header("location: cozinheiro/cozinha.php");
+                    header("location: cozinheiro/index.php");
                 }
             } else {
                 echo "<script>alert('Dados Invalidos')</script>";

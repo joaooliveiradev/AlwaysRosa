@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    error_reporting(0);
+    if (isset($_SESSION['cargo'])) {
+        $cargo = $_SESSION['cargo'];
+        if ($cargo === "3") {
+            $cargoName = "Administrador";
+        } else {
+            readfile('error.php');
+            die();
+        }
+    } else {
+        readfile('error.php');
+        die();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -17,10 +35,34 @@
 <body>
 
     <nav>
+        <ul id="slide-out" class="sidenav" style="width:235px!important">
+            <li>
+                <div class="user-view" style="padding: 32px 0px 0;">
+                    <a style="float:left;" href="#user"><img style="width: 80px!important; height: 80px!important;" class="circle" src="../img/iconAdmin.png"></a>
+                    <a style="padding-top: 17px; display: inline-block;" href="#name"><span class="black-text name" style="font-size: 17px!important;">Olá <?php echo $cargoName?></span></a>
+
+                </div>
+            </li>
+            <a href="../php/actions/logout.php" style="color: black; color: black;font-size: 18px;padding-top: 12px; display: block; text-align: center;padding: 0px 67px; font-weight: 600" href="#!"><i style="float: left;     position: absolute;
+    right: 130px; font-weight: 600" class="material-icons seta">keyboard_backspace</i>Sair</a>
+        </ul>
+
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+
         <div class="nav-wrapper">
             <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
         </div>
+
     </nav>
+
+
+
+
+
+
+
+
+
 
     <h1 class="titulo">Painel de Controle</h1>
 
@@ -90,14 +132,21 @@
                     <i class="material-icons boxicon6">assessment</i>
                     <span class="boxtitulo6"><a href="resumeSeller/">Resumo de Vendas</a></span>
                 </div>
-                
-            <div>
-        </div>
-    </div>
+
+                <div>
+                </div>
+            </div>
             <!--Import JQUERY-->
             <script type="text/javascript" src="../materialize/jquery/jquery-3.3.1.min.js"></script>
 
             <!--Import MATERIALIZE.JS-->
             <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-    </body>
+
+            <script>
+                $(document).ready(function() {
+                    $('.sidenav').sidenav();
+                });
+            </script>
+</body>
+
 </html>

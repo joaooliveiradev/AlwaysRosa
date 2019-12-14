@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <h1 class="titulo">Cozinha</h1>
+    <h1 class="titulo">Cozinha - Tela Administrador</h1>
 
 
     <form action="#">

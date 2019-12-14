@@ -7,7 +7,7 @@ try {
     $stmt->bindValue(':status_pedido', $status_pedido);
     $stmt->bindValue(':id', $id);
     $stmt->execute();
-    header('Location: ../../../admin/cozinheiro/index.php');
+    header('Location: ../../../admin/kitchen/index.php');
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

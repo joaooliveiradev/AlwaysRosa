@@ -52,7 +52,7 @@
                                     <td><?= $numero ?></td>
                                     <td><?= $descricao ?></td>
                                     <td><?= $observacao ?></td>
-                                    <td><a href="../../php/garcom/remove_pedido.php?iditens=<?= $iditens ?>"><i class="material-icons red-text">delete</i></a></td>
+                                    <td><a href="../../php/garcom/admin/remove_pedido.php?iditens=<?= $iditens ?>"><i class="material-icons red-text">delete</i></a></td>
                                 </tr>
                             <?php endforeach ?>
                         </tbody>

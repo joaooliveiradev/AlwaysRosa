@@ -33,12 +33,12 @@
 
                 <div class="col s4 box">
                     <i class="material-icons boxicon">shopping_basket</i>
-                    <span class="boxtitulo"><a href="../../caixa/fechamento.php">Fechamento</a></span>
+                    <span class="boxtitulo"><a href="fechamento.php">Fechamento</a></span>
                 </div>
 
 
                 <div class="col s12 button-center">
-                    <a href="../" class="waves-effect waves-light btn botaoVoltar">
+                    <a href="../index.php" class="waves-effect waves-light btn botaoVoltar">
                         Voltar
                     </a>
                 </div>

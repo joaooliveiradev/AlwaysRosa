@@ -1,3 +1,23 @@
+<?php
+session_start();
+error_reporting(0);
+
+if (isset($_SESSION['cargo'])) {
+    $cargo = $_SESSION['cargo'];
+    if ($cargo === "2") {
+        $cargoName = "Garçom";
+    } else {
+        readfile('error.php');
+        die();
+    }
+} else {
+    readfile('error.php');
+    die();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +38,20 @@
 <body>
 
     <nav>
+        <ul id="slide-out" class="sidenav" style="width:235px!important">
+            <li>
+                <div class="user-view" style="padding: 32px 12px 0;">
+                    <a style="float:left;" href="#user"><img  class="circle" src="../img/iconGarcom.png"></a>
+                    <a style="padding-top: 17px; display: inline-block;" href="#name"><span class="black-text name" style="margin-left: 20px; margin-top: 9px!important; font-size: 18px!important;">Olá <?php echo $cargoName ?></span></a>
+
+                </div>
+            </li>
+            <a href="../php/actions/logout.php" style="color: black; color: black;font-size: 18px;padding-top: 12px; display: block; text-align: center;padding: 0px 67px; font-weight: 600" href="#!"><i style="float: left;     position: absolute;
+    right: 130px; font-weight: 600; padding-right: 10px!important;" class="material-icons seta">keyboard_backspace</i>Sair</a>
+        </ul>
+
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+
         <div class="nav-wrapper">
             <a href="#" class="brand-logo center"><img src="../img/logo.png" /></a>
         </div>
@@ -70,6 +104,10 @@
                 }
             }, 2000);
         })
+
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
     </script>
 </body>
 

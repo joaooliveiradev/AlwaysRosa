@@ -34,7 +34,7 @@ try {
         $stmt3->bindValue(':status', 0);
         $stmt3->execute();    
     //libera toda as seções para efetuar novos fechamentos
-        session_unset();
+        session_unset($_SESSION["pedido"]["id"]);
      
        
         }

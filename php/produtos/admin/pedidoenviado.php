@@ -1,5 +1,5 @@
 <?php
 session_start();
 unset($_SESSION["pedido"]["id"]);
-header('location: ../../../admin/garcom/index.php')
+header('location: ../../../admin/waiter/index.php')
 ?>

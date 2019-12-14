@@ -25,7 +25,7 @@ try {
             $stmt5->bindValue(':idproduto', $idproduto);
             $stmt5->bindValue(':idpedido', $idpedido);
             $stmt5->execute();
-            header('location: ../../../admin/garcom/conferirpedido.php');
+            header('location: ../../../admin/waiter/conferirpedido.php');
         } else {
             $stmt = $conexao->prepare("UPDATE itens SET preco = :preco ,observacao = :observacao, id_produtos_fk = :idproduto where iditens = :iditens");
             $stmt->bindValue(':preco', $preco);
@@ -33,7 +33,7 @@ try {
             $stmt->bindValue(':idproduto', $idproduto);
             $stmt->bindValue(':iditens', $iditens);
             $stmt->execute();
-            header('location: ../../../admin/garcom/conferirpedido.php');
+            header('location: ../../../admin/waiter/conferirpedido.php');
         }
     } else {
         try {
@@ -52,7 +52,7 @@ try {
                 $_SESSION["produto"]["id"] = $idproduto;
                 $_SESSION["observacao"] = $observacao;
                 $_SESSION["preco"] = $preco;
-                header('location: ../../../admin/garcom/conferirpedido.php');
+                header('location: ../../../admin/waiter/conferirpedido.php');
             }
         } catch (PDOException $erro) {
             echo "Erro: " . $erro->getMessage();
