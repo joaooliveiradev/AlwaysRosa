@@ -6,9 +6,8 @@ if (isset($_SESSION['cargo'])) {
     $cargo = $_SESSION['cargo'];
     if ($cargo === "2") {
         $cargoName = "Garçom";
-    } else {
-        readfile('error.php');
-        die();
+    } else if ($cargo != 2) {
+        header("../");
     }
 } else {
     readfile('error.php');
@@ -41,7 +40,7 @@ if (isset($_SESSION['cargo'])) {
         <ul id="slide-out" class="sidenav" style="width:235px!important">
             <li>
                 <div class="user-view" style="padding: 32px 12px 0;">
-                    <a style="float:left;" href="#user"><img  class="circle" src="../img/iconGarcom.png"></a>
+                    <a style="float:left;" href="#user"><img class="circle" src="../img/iconGarcom.png"></a>
                     <a style="padding-top: 17px; display: inline-block;" href="#name"><span class="black-text name" style="margin-left: 20px; margin-top: 9px!important; font-size: 18px!important;">Olá <?php echo $cargoName ?></span></a>
 
                 </div>
@@ -65,20 +64,26 @@ if (isset($_SESSION['cargo'])) {
                 <!-- BOX 1 -->
 
                 <div class="col s4 box">
-                    <i class="material-icons boxicon">shopping_cart</i>
-                    <span class="boxtitulo"><a href="pedidos.php">Pedidos</a></span>
+                    <a href="pedidos.php">
+                        <i class="material-icons boxicon">shopping_cart</i>
+                        <span class="boxtitulo">Pedidos</span>
+                    </a>
                 </div>
 
                 <!-- BOX 2 -->
 
                 <div class="col s4 box2">
-                    <i class="material-icons boxicon2">add_shopping_cart</i>
-                    <span class="boxtitulo2"><a href="pedido.php">Novo Pedido</a></span>
+                    <a href="pedido.php">
+                        <i class="material-icons boxicon2">add_shopping_cart</i>
+                        <span class="boxtitulo2">Novo Pedido</span>
+                    </a>
                 </div>
 
                 <div class="col s4 box2">
-                    <i class="material-icons boxicon2">add_shopping_cart</i>
-                    <span class="boxtitulo2"><a href="pedidosfinalizados.php">Pedidos Finalizados</a></span>
+                    <a href="pedidosfinalizados.php">
+                        <i class="material-icons boxicon2">add_shopping_cart</i>
+                        <span class="boxtitulo2">Pedidos Finalizados</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -98,7 +103,7 @@ if (isset($_SESSION['cargo'])) {
                 for (const pedido in data) {
                     M.toast({
                         html: `O ${data[pedido][0]} da mesa ${data[pedido][1]} foi finalizado.`,
-                        classes: 'red white-text',
+                        classes: 'green accent-4',
                         displayLength: Infinity
                     })
                 }
