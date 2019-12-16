@@ -1,18 +1,18 @@
 <?php
-    session_start();
-    error_reporting(0);
-    if (isset($_SESSION['cargo'])) {
-        $cargo = $_SESSION['cargo'];
-        if ($cargo === "3") {
-            $cargoName = "Administrador";
-        } else {
-            readfile('error.php');
-            die();
-        }
+session_start();
+error_reporting(0);
+if (isset($_SESSION['cargo'])) {
+    $cargo = $_SESSION['cargo'];
+    if ($cargo === "3") {
+        $cargoName = "Administrador";
     } else {
         readfile('error.php');
         die();
     }
+} else {
+    readfile('error.php');
+    die();
+}
 
 ?>
 
@@ -39,7 +39,7 @@
             <li>
                 <div class="user-view" style="padding: 32px 0px 0;">
                     <a style="float:left;" href="#user"><img style="width: 80px!important; height: 80px!important;" class="circle" src="../img/iconAdmin.png"></a>
-                    <a style="padding-top: 17px; display: inline-block;" href="#name"><span class="black-text name" style="font-size: 17px!important;">Olá <?php echo $cargoName?></span></a>
+                    <a style="padding-top: 17px; display: inline-block;" href="#name"><span class="black-text name" style="font-size: 17px!important;">Olá <?php echo $cargoName ?></span></a>
 
                 </div>
             </li>
@@ -72,65 +72,83 @@
                 <!-- BOX 3 -->
 
                 <div class="col s4 box3">
-                    <i class="material-icons boxicon3">category</i>
-                    <span class="boxtitulo3"><a href="insertCategory/">Cadastrar Categoria</a></span>
+                    <a href="insertCategory/">
+                        <i class="material-icons boxicon3">category</i>
+                        <span class="boxtitulo3">Cadastrar Categoria</span>
+                    </a>
                 </div>
 
                 <!-- BOX  -->
 
                 <div class="col s4 box">
-                    <i class="material-icons boxicon">add_shopping_cart</i>
-                    <span class="boxtitulo"><a href="insertProducts/">Cadastro Produto</a></span>
+                    <a href="insertProducts/">
+                        <i class="material-icons boxicon">add_shopping_cart</i>
+                        <span class="boxtitulo">Cadastro Produto</span>
+                    </a>
                 </div>
 
                 <!-- BOX 2 -->
 
 
                 <div class="col s4 box2">
-                    <i class="material-icons boxicon2">border_all</i>
-                    <span class="boxtitulo2"><a href="insertTable/">Cadastrar Mesa</a></span>
+                    <a href="insertTable/">
+                        <i class="material-icons boxicon2">border_all</i>
+                        <span class="boxtitulo2">Cadastrar Mesa</span>
+                    </a>
                 </div>
 
                 <!-- BOX 8 -->
 
                 <div class="col s4 box8">
-                    <i class="material-icons boxicon9">computer</i>
-                    <span class="boxtitulo8"><a href="insertPositions/">Cadastrar Cargos</a></span>
+                    <a href="insertPositions/">
+                        <i class="material-icons boxicon9">computer</i>
+                        <span class="boxtitulo8">Cadastrar Cargos</span>
+                    </a>
                 </div>
 
                 <!-- BOX 4 -->
 
                 <div class="col s4 box4">
-                    <i class="material-icons boxicon4">group_add</i>
-                    <span class="boxtitulo4"><a href="insertColaborator/">Cadastro Funcionário</a></span>
+                    <a href="insertColaborator/">
+                        <i class="material-icons boxicon4">group_add</i>
+                        <span class="boxtitulo4">Cadastro Funcionário</span>
+                    </a>
                 </div>
 
                 <!-- BOX 7 -->
 
                 <div class="col s4 box7">
-                    <i class="material-icons boxicon7">computer</i>
-                    <span class="boxtitulo7"><a href="waiter/">Tela Garçom</a></span>
+                    <a href="waiter/">
+                        <i class="material-icons boxicon7">computer</i>
+                        <span class="boxtitulo7">Tela Garçom</span>
+                    </a>
                 </div>
 
                 <!-- BOX 8 -->
 
                 <div class="col s4 box8">
-                    <i class="material-icons boxicon8">computer</i>
-                    <span class="boxtitulo8"><a href="kitchen/">Tela Cozinha</a></span>
+                    <a href="kitchen/">
+                        <i class="material-icons boxicon8">computer</i>
+                        <span class="boxtitulo8">Tela Cozinha</span>
+                    </a>
                 </div>
 
                 <!-- BOX 5 -->
 
                 <div class="col s4 box5">
-                    <i class="material-icons boxicon5">computer</i>
-                    <span class="boxtitulo5"><a href="cashier/">Tela Caixa</a></span>
+                    <a href="cashier/">
+                        <i class="material-icons boxicon5">computer</i>
+                        <span class="boxtitulo5">Tela Caixa</span>
+                    </a>
                 </div>
 
                 <!-- BOX 6 -->
 
                 <div class="col s4 box6">
-                    <i class="material-icons boxicon6">assessment</i>
-                    <span class="boxtitulo6"><a href="resumeSeller/">Resumo de Vendas</a></span>
+                    <a href="resumeSeller/">
+                        <i class="material-icons boxicon6">assessment</i>
+                        <span class="boxtitulo6">Resumo de Vendas</span>
+                    </a>
                 </div>
 
                 <div>

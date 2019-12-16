@@ -30,3 +30,10 @@ O software terá como principal objetivo gerenciar a realização de pedidos fei
 - Faça as mudanças.
 - Dê um Commit e abra um PR no [GitHub](https://github.com/joaooliveiradev/AlwaysRosa) do projeto.
 
+# Coisas a Fazer 
+
+  * Mudar do tela do pedido
+  * cadastro forma de pagamento
+  * mudança de mesa 
+  * tela do caixa - mostrar o que o cliente consumiu - no final do fechamento mostrar o comprovante.
+  * 

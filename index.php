@@ -1,3 +1,20 @@
+<?php 
+session_start();
+    if(isset($_SESSION['cargo'])){
+        if($_SESSION['cargo'] === "1"){
+            header("location: caixa/");
+        }else if($_SESSION['cargo'] === "2"){
+            header("location: garcom/");
+        }else if($_SESSION['cargo'] === "3"){
+            header("location: admin/");
+        }else if($_SESSION['cargo'] === "4"){
+            header("location: cozinheiro/");
+        }
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +37,7 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row"> 
             <div class="col s12 login">
                 <form name="formulario" method="POST">
                     <div class="logo">
@@ -42,32 +59,28 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
-
         $login = filter_input(INPUT_POST, 'login', FILTER_DEFAULT);
         $senha = filter_input(INPUT_POST, 'senha', FILTER_DEFAULT);
 
         include 'php/conexao.php';
 
         try {
-
             $stmt = $conexao->prepare("SELECT * FROM `usuario` WHERE login = :login and senha = :senha");
             $stmt->bindValue(":login", $login);
             $stmt->bindValue(":senha", $senha);
             $stmt->execute();
-            if ($stmt->rowCount() > 0) {
-                session_start();
+            if ($stmt->rowCount()) {
                 $user = $stmt->fetch();
                 $cargo = $user["id_cargo"];
                 $_SESSION['cargo'] = $cargo;
                 if ($cargo == "1") {
-                    header("location: caixa/index.php");
+                    header("location: caixa/");
                 } else if ($cargo == "2") {
-                    header("location: garcom/index.php");
+                    header("location: garcom/");
                 } else if ($cargo == "3") {
-                    header("location: admin/index.php");
+                    header("location: admin/");
                 } else if ($cargo == "4") {
-                    header("location: cozinheiro/index.php");
+                    header("location: cozinheiro/");
                 }
             } else {
                 echo "<script>alert('Dados Invalidos')</script>";
