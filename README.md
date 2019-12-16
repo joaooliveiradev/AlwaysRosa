@@ -36,4 +36,3 @@ O software terá como principal objetivo gerenciar a realização de pedidos fei
   * cadastro forma de pagamento
   * mudança de mesa 
   * tela do caixa - mostrar o que o cliente consumiu - no final do fechamento mostrar o comprovante.
-  * 
