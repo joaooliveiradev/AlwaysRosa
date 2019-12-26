@@ -37,7 +37,7 @@
                     session_start();
                     include '../php/conexao.php';
                     try {
-                        $stmt = $conexao->prepare("SELECT *from mesa ");
+                        $stmt = $conexao->prepare("SELECT * from mesa ");
                         if ($stmt->execute()) {
                             while ($rs = $stmt->fetch(PDO::FETCH_OBJ)) {
                                 ?>

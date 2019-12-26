@@ -6,7 +6,7 @@
     <!--Import MATERIALIZE.CSS-->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
 
-   
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,9 +87,9 @@
 
 
                         <div class="button-center">
-                        <a id="voltar"  class="waves-effect waves-light btn button" style="margin-right: 15px!important">
+                            <a id="voltar" class="waves-effect waves-light btn button" style="margin-right: 15px!important">
                                 Voltar
-                        </a>
+                            </a>
                             <button class="btn  waves-light button">Enviar pedido</button>
                         </div>
                     </div>

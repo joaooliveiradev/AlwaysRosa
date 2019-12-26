@@ -79,10 +79,22 @@ if (isset($_SESSION['cargo'])) {
                     </a>
                 </div>
 
+                <!-- BOX 3 -->
+
                 <div class="col s4 box2">
                     <a href="pedidosfinalizados.php">
                         <i class="material-icons boxicon2">add_shopping_cart</i>
                         <span class="boxtitulo2">Pedidos Finalizados</span>
+                    </a>
+                </div>
+                
+                
+                <!-- BOX 4 -->
+
+                <div class="col s4 box2">
+                    <a href="mudarmesa.php">
+                        <i class="material-icons boxicon2">border_all</i>
+                        <span class="boxtitulo2">Mudança de Mesa</span>
                     </a>
                 </div>
             </div>
