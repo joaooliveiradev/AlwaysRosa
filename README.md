@@ -32,7 +32,7 @@ O software terá como principal objetivo gerenciar a realização de pedidos fei
 
 # Coisas a Fazer 
 
-  * Mudar do tela do pedido
-  * cadastro forma de pagamento
-  * mudança de mesa 
-  * tela do caixa - mostrar o que o cliente consumiu - no final do fechamento mostrar o comprovante.
+ - [ ] Mudanças na tela de pedido, refazer utilizando sessões.
+ - [ ] Cadastro forma de pagamento
+ - [x] Mudança de mesa 
+ - [ ] Mostrar o que o cliente consumiu antes de realizar o fechamento da comanda, no final da comanda exibir o comprovante.
